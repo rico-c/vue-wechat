@@ -1,0 +1,15 @@
+.middle{
+	position:fixed;
+	top:45px;
+    width:100%;
+}
+body{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+#app{
+	width:100%;
+	margin:0;
+	padding:0;
+}
