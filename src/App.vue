@@ -1,23 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <v-header></v-header>
+    <v-footer></v-footer>
   </div>
 </template>
 
 <script>
+import VHeader from './components/common/vheader.vue'
+import VFooter from './components/common/vfooter.vue'
 export default {
-  name: 'App'
-}
+  components: {
+    VHeader,
+    VFooter
+   }
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
