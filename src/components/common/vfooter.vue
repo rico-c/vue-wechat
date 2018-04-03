@@ -1,23 +1,25 @@
 <template>
 	<div id="vfooter">
+		
 		<nav>
-			<router-link to="" tag="dl">
+			<router-link to="/" tag="dl">
 				<dt class= 'iconfont icon-wechat'></dt>
 				<dd>微信</dd>
 			</router-link>
-			<router-link to="" tag="dl">
+			<router-link to="/vcontact" tag="dl">
 				<dt class= 'iconfont icon-contact'></dt>
 				<dd>通讯录</dd>
 			</router-link>
-			<router-link to="" tag="dl">
+			<router-link to="/vexplore" tag="dl">
 				<dt class= 'iconfont icon-find'></dt>
 				<dd>发现</dd>
 			</router-link>
-			<router-link to="" tag="dl">
+			<router-link to="/vme" tag="dl">
 				<dt class= 'iconfont icon-me'></dt>
 				<dd>我</dd>
-			</router-link>
+			</router-link>				
 		</nav>
+
 	</div>
 </template>
 <script type="text/javascript">
@@ -54,7 +56,7 @@
 		background:#f9f9f9;
 		padding-top:8px;
 	}
-	router-link{
+	dl{
 		width:25%;
 	}
 	dd{

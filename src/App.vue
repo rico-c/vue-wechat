@@ -3,6 +3,9 @@
     <v-header></v-header>
     <div class="middle">
       <v-search></v-search>
+      <keep-alive>
+          <router-view name="default"></router-view>
+      </keep-alive>
     </div>
     <v-footer></v-footer>
   </div>

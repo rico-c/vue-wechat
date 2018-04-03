@@ -29,6 +29,9 @@ export default {}
 		top: 5px;
      	left:3%;
 	}
+	#topsearch:focus{
+		border:0;
+	}
 	input::-ms-input-placeholder{text-align: center;}
 	input::-webkit-input-placeholder{text-align: center;}
 </style>
