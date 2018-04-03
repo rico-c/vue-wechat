@@ -9,15 +9,15 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-     path: 'components/vcontact',
+     path: '/vcontact',
      component: vcontact
     },
     {
-     path: 'components/vexplore',
+     path: '/vexplore',
      component: vexplore
     },
     {
-     path: 'components/vme',
+     path: '/vme',
      component: vme
     }
   ]

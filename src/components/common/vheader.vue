@@ -1,6 +1,6 @@
 <template>
 	<div id="vheader">
-		微信
+		{{pagename}}
 	</div>
 </template>
 <script type="text/javascript">

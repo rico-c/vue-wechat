@@ -10,7 +10,7 @@ export default {}
 </script>
 <style type="text/css">
 	#searchbar{
-		position:absolute;
+		position:relative;
 		width:100%;
 		height:35px;
 		background:#f9f9f9;
