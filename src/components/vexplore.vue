@@ -2,12 +2,7 @@
 	<p>explore</p>
 </template>
 <script type="text/javascript">
-	export default{
-		data() {
-			return{
-				'pagename':'发现'
-			}
-		}
+	export default{	
 	}
 </script>
 <style type="text/css"></style>

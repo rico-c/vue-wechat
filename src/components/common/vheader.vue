@@ -1,6 +1,6 @@
 <template>
 	<div id="vheader">
-		{{pagename}}
+		{{$store.state.currentPageName}}
 	</div>
 </template>
 <script type="text/javascript">
