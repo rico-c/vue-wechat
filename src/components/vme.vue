@@ -1,17 +1,19 @@
 <template>
 	<div id='mepage-bg'>
+		<router-link to="/myprofile">
 		<div class='idcells'>
-			<div class="weui-cell__hd">
-            <img src='../assets/image/rico.png' id='headimage'>
-          	</div>
-          	<div class="weui-cell__bd">
-            <h2 class="self-nickname">曹昱RICO</h2>
-            <p class="self-wxid">微信号: ricardo_cy</p>
-         	</div>
-         	<div class="weui-cell__ft">
-            <img src="../assets/image/chat-info-qr.png">
-          </div>
+				<div class="weui-cell__hd">
+	            	<img src='../assets/image/rico.png' id='headimage'>
+	          	</div>
+	          	<div class="weui-cell__bd">
+	            	<h2 class="self-nickname">曹昱RICO</h2>
+	           		 <p class="self-wxid">微信号: ricardo_cy</p>
+	         	</div>
+	         	<div class="weui-cell__ft">
+	           		<img src="../assets/image/chat-info-qr.png">
+	          </div>
 		</div>
+		</router-link>
 		<div class='cells'>
 			<div class='cell'>
 				<div class='cellimg'>

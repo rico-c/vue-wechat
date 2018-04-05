@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import vcontact from '../components/vcontact.vue';
 import vexplore from '../components/vexplore.vue';
 import vme from '../components/vme.vue';
+import myprofile from'../components/pages/myprofile.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,13 @@ export default new Router({
      meta:{
         title:'我'
      }
+    },
+    {
+     path: '/myprofile',
+     component: myprofile,
+     meta:{
+        title:'个人信息'
+        }
     }
   ]
 })

@@ -9,7 +9,6 @@
 <style type="text/css">
 	#vheader{
 	  position: fixed;
-	  z-index: 99;
 	  height: 45px;
 	  line-height: 45px;
 	  background: #1b1b1b;
