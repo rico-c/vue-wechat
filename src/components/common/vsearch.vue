@@ -13,7 +13,7 @@ export default {}
 		position:relative;
 		width:100%;
 		height:35px;
-		background:#f9f9f9;
+		background:efeff4;
 	}
 	#searchinput{
 		position:absolute;

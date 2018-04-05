@@ -13,22 +13,57 @@
           </div>
 		</div>
 		<div class='cells'>
-			<div class='cellimg'>
-           		<img src="../assets/image/me_more-my-bank-card.png">
+			<div class='cell'>
+				<div class='cellimg'>
+	           		<img src="../assets/image/me_more-my-bank-card.png">
+	         	</div>
+	         	<div class="cellname">
+	           		<p>钱包</p>
+	         	</div>
+	         </div>
+		</div>
+		<div class='cells'>
+			<div class='cell'>
+				<div class='cellimg'>
+           			<img src="../assets/image/me_more-my-favorites.png">
+         		</div>
+         		<div class="cellname">
+           		<p>收藏</p>
+           		</div>
          	</div>
-         	<div class="cellname">
-           		<p>钱包</p>
+         	<div class='cell'>
+				<div class='cellimg'>
+           			<img src="../assets/image/me_more-my-album.png">
+         		</div>
+         		<div class="cellname">
+           			<p>相册</p>
+           		</div>
+         	</div>
+         	<div class='cell'>
+				<div class='cellimg'>
+           			<img src="../assets/image/me_my-card-package-icon.png">
+         		</div>
+         		<div class="cellname">
+           			<p>卡包</p>
+           		</div>
+         	</div>
+         	<div class='cell'>
+				<div class='cellimg'>
+           			<img src="../assets/image/me_more-expression.png">
+         		</div>
+         		<div class="cellname">
+           			<p>表情</p>
+           		</div>
          	</div>
 		</div>
 		<div class='cells'>
-			
-		</div>
-		<div class='cells'>
-			<div class='cellimg'>
-           		<img src="../assets/image/me_more-setting.png">
-         	</div>
-         	<div class="cellname">
-           		<p>设置</p>
+			<div class='cell'>
+				<div class='cellimg'>
+	           		<img src="../assets/image/me_more-setting.png">
+	         	</div>
+	         	<div class="cellname">
+	           		<p>设置</p>
+	         	</div>
          	</div>
 		</div>
 	</div>
