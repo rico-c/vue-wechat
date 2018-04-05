@@ -10,15 +10,24 @@ export default new Router({
   routes: [
     {
      path: '/vcontact',
-     component: vcontact
+     component: vcontact,
+     meta:{
+        title:'联系人'
+     }
     },
     {
      path: '/vexplore',
-     component: vexplore
+     component: vexplore,
+     meta:{
+        title:'发现'
+     }
     },
     {
      path: '/vme',
-     component: vme
+     component: vme,
+     meta:{
+        title:'我'
+     }
     }
   ]
 })

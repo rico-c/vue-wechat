@@ -2,17 +2,47 @@
 	position:fixed;
 	top:45px;
     width:100%;
+
 }
 body{
 	width:100%;
 	margin:0;
 	padding:0;
+
 }
 #app{
 	width:100%;
 	margin:0;
 	padding:0;
+
 }
+p{margin:0}
 dl{
 	margin:0px;
+}
+.idcells{
+	width:100%;
+	border-top: solid 0.5px grey;
+	border-bottom: solid 0.5px grey;
+	margin:10px 0 12px 0;
+}
+.cells{
+	width:100%;
+	border-top: solid 0.5px grey;
+	border-bottom: solid 0.5px grey;
+	margin:10px 0 12px 0;
+	height:30px;
+}
+.cellimg img{
+	width:23px;
+	height:23px;
+	
+}
+.cellimg{
+	display: inline-block;
+	margin:2px 5px 0 5px
+}
+.cellname{
+	font-size: 15px;
+	display: inline-block;
 }

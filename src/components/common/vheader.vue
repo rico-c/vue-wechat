@@ -1,6 +1,6 @@
 <template>
 	<div id="vheader">
-		{{$store.state.currentPageName}}
+		{{$route.meta.title||'微信'}}
 	</div>
 </template>
 <script type="text/javascript">

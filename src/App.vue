@@ -2,7 +2,7 @@
   <div id="app">
     <v-header></v-header>
     <div class="middle">
-      <v-search></v-search>
+      <v-search v-show="$route.path.indexOf('vexplore')===-1&&$route.path.indexOf('vme')===-1"></v-search>
       <keep-alive>
           <router-view name="default"></router-view>
       </keep-alive>
