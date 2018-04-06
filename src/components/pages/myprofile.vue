@@ -2,10 +2,11 @@
 	<div id="myprofile">
 		<div id="back-to-setting">
 			<router-link to="/vme">
-			<span><</span><span>我</span>
+			<span>〈 </span><span>我</span>
 			</router-link>
 		</div>
 		<div class='profilecells'>
+			<router-link to="/personalheader">
 			<div class='profileheader'>
 		       	<div class="profileheadername">
 		       		<p>头像</p>
@@ -14,6 +15,7 @@
 		       		<img src="../../assets/image/rico.png">
 		       	</div>
 		    </div>
+			</router-link>
 		    <div class='profilecell'>
 		       	<div class="profilecellname">
 		       		<p>名字</p>
@@ -30,6 +32,7 @@
 		       		<p>ricardo_cy</p>
 		       	</div>
 		    </div>
+		    <router-link to="/myqr">
 		    <div class='profilecell'>
 		       	<div class="profilecellname">
 		       		<p>我的二维码</p>
@@ -38,6 +41,7 @@
 		       		<img src="../../assets/image/chat-info-qr.png">
 		       	</div>
 		    </div>
+			</router-link>
 		</div>
 		<div class='profilecells'>
 				<div class='profilecell'>

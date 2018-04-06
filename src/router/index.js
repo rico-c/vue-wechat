@@ -3,7 +3,10 @@ import Router from 'vue-router';
 import vcontact from '../components/vcontact.vue';
 import vexplore from '../components/vexplore.vue';
 import vme from '../components/vme.vue';
-import myprofile from'../components/pages/myprofile.vue'
+import myprofile from'../components/pages/myprofile.vue';
+import personalheader from '../components/pages/personalheader.vue'
+import myqr from '../components/pages/myqr.vue'
+import settings from '../components/pages/settings.vue'
 
 Vue.use(Router)
 
@@ -35,6 +38,27 @@ export default new Router({
      component: myprofile,
      meta:{
         title:'个人信息'
+        }
+    },
+    {
+     path: '/personalheader',
+     component: personalheader,
+     meta:{
+        title:'个人头像'
+        }
+    },
+    {
+     path: '/myqr',
+     component: myqr,
+     meta:{
+        title:'我的二维码'
+        }
+    },
+    {
+     path: '/settings',
+     component: settings,
+     meta:{
+        title:'设置'
         }
     }
   ]

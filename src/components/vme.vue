@@ -58,7 +58,8 @@
            		</div>
          	</div>
 		</div>
-		<div class='cells'>
+		<router-link to="/settings">
+		<div class='cells'>			
 			<div class='cell'>
 				<div class='cellimg'>
 	           		<img src="../assets/image/me_more-setting.png">
@@ -68,6 +69,7 @@
 	         	</div>
          	</div>
 		</div>
+		</router-link>
 	</div>
 </template>
 <script type="text/javascript">
