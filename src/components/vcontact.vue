@@ -34,17 +34,17 @@
 		         	</div>
 		        </div>
 		</div>
-		<div class='contactcells'>
-			<router-link to='/details'>
+		<div class='contactcells'>		
 			<div class='contactcell' v-for='contactinfo in contacts'>
+			<router-link :to="{path:'/details',query:{contactid:contactinfo}}">	
 				<div class='contactcellimg'>
 		           	<img src="contactinfo.headerimg">
 		         </div>
 		         <div class='contactcellname'>
 					{{contactinfo.name}}
 				</div>
-			</div>
-			</router-link>		
+			</router-link>
+			</div>		
 		</div>
 	</div>
 </template>
@@ -91,5 +91,10 @@
 		display:flex;
 		align-items: center;
 		background-color: white;
+	}
+	.contactcell a{
+		margin:0px;
+		display:flex;
+		align-items: center;
 	}
 </style>

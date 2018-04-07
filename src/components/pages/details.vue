@@ -11,7 +11,7 @@
 		          	<img src="">
 		        </div>
 		        <div class="detailheadername">
-		          	<h4>曹昱</h4>
+		          	<h4>{{userInfo.name}}</h4>
 		          	<p>微信号</p>
 		          	<p>hhh</p>
 		        </div>
@@ -42,7 +42,11 @@
 	</div>
 </template>
 <script type="text/javascript">export default{
-
+	computed: {
+            userInfo() {
+                return this.$route.query.contactid;
+            }
+        }
 }</script>
 <style type="text/css">
 	#back{
@@ -62,7 +66,7 @@
 		border-bottom: solid 0.5px #d9d9d9;
 	}
 	.detailcells{
-		margin:15px 0 0 0;
+		margin:13px 0 0 0;
 		border-top: solid 0.5px #d9d9d9;
 	}
 	.detailheader{
