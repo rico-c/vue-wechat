@@ -31,10 +31,11 @@ text-decoration: underline;
 	margin:0;
 	padding:0;
 }
-p{margin:0}
+p{margin:0;}
 dl{
 	margin:0px;
 }
+h4{margin:0 0 5px;}
 .idcells{
 	width:100%;
 	border-top: solid 0.5px #d9d9d9;
@@ -72,4 +73,24 @@ dl{
 	display:flex;
 	align-items: center;
 	background-color: white;
+}
+.buttongreen{
+	width:90%;
+	height:35px;
+	background-color:#1aad19;
+	border-radius: 5px;
+	margin:15px auto;
+	text-align: center;
+	line-height: 35px;
+	color:white;
+}
+.buttonwhite{
+	width:90%;
+	height:35px;
+	background-color:white;
+	border-radius: 5px;
+	margin:10px auto;
+	text-align: center;
+	line-height: 35px;
+	color:black;
 }

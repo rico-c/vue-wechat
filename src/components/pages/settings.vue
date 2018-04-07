@@ -73,4 +73,7 @@
 		color:white;
 		z-index:100;
 	}
+	#back-to-setting a{
+		color:white;
+	}
 </style>

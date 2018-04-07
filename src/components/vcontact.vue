@@ -37,7 +37,12 @@
 		<div class='contactcells'>
 			<router-link to='/details'>
 			<div class='contactcell' v-for='contactinfo in contacts'>
-				{{contactinfo.name}}
+				<div class='contactcellimg'>
+		           	<img src="contactinfo.headerimg">
+		         </div>
+		         <div class='contactcellname'>
+					{{contactinfo.name}}
+				</div>
 			</div>
 			</router-link>		
 		</div>
@@ -48,12 +53,12 @@
 	export default{
 		data() {
        	 	return {
-         	  	contacts: ''
+         	  	contacts:[]
         }},
 		created() {
-    		axios.get('static/data.json').then((res) => {
-     		this.contacts = res.data.contacts
-    		})
+    		axios.get('static/data.json').then(response => 
+     			(this.contacts=response.data.contacts)
+    		);
   		},
 	}
 </script>
@@ -61,9 +66,8 @@
 	.contactcells{
 		width:100%;
 		border-top: solid 0.5px #d9d9d9;
-		margin:0;
+		margin:0 0 13px 0;
 		display:flex;
-		align-items: center;
 		background-color: white;
 		flex-direction: column;
 	}
