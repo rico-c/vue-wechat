@@ -34,10 +34,27 @@
 		         	</div>
 		        </div>
 		</div>
+		<div class='contactcells'>
+			<router-link to='/details'>
+			<div class='contactcell' v-for='contactinfo in contacts'>
+				{{contactinfo.name}}
+			</div>
+			</router-link>		
+		</div>
 	</div>
 </template>
 <script type="text/javascript">
+	import axios from 'axios'
 	export default{
+		data() {
+       	 	return {
+         	  	contacts: ''
+        }},
+		created() {
+    		axios.get('static/data.json').then((res) => {
+     		this.contacts = res.data.contacts
+    		})
+  		},
 	}
 </script>
 <style type="text/css">

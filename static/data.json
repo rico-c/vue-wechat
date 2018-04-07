@@ -1,0 +1,72 @@
+{
+	"contacts":[
+		{
+			"name":"justjavac",
+			"id":"justjavac",
+			"sex":1;
+			"region"::"天津 南开",
+			"headerimg":"",
+			"momentsimg":"",
+			"personalnote":"",
+		},
+		{
+			"name":"大漠_w3cplus.com",
+			"id":"w3cplus",
+			"sex":1;
+			"region"::"浙江 杭州",
+			"headerimg":"",
+			"momentsimg":"",
+			"personalnote":"",
+		},
+		{
+			"name":"尤雨溪",
+			"id":"EvanYou",
+			"sex":1;
+			"region"::"美国",
+			"headerimg":"",
+			"momentsimg":"",
+			"personalnote":"",
+		},
+		{
+			"name":"马化腾",
+			"id":"pony",
+			"sex":1;
+			"region"::"广东 深圳",
+			"headerimg":"",
+			"momentsimg":"",
+			"personalnote":"",
+		},
+		{
+			"name":"张小龙",
+			"id":"AllenZhang",
+			"sex":1;
+			"region"::"广东 深圳",
+			"headerimg":"",
+			"momentsimg":"",
+			"personalnote":"",
+		},
+		{
+			"name":"任正非",
+			"id":"rzf",
+			"sex":1;
+			"region"::"广东 深圳",
+			"headerimg":"",
+			"momentsimg":"",
+			"personalnote":"",
+		},
+		{
+			"name":"唐艺昕",
+			"id":"tyx",
+			"sex":0;
+			"region"::"重庆 沙坪坝",
+			"headerimg":"",
+			"momentsimg":"",
+			"personalnote":"",
+		},
+
+	],
+	"moments":[
+	],
+	"dialogue":[
+	]
+}

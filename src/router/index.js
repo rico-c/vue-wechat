@@ -4,9 +4,10 @@ import vcontact from '../components/vcontact.vue';
 import vexplore from '../components/vexplore.vue';
 import vme from '../components/vme.vue';
 import myprofile from'../components/pages/myprofile.vue';
-import personalheader from '../components/pages/personalheader.vue'
-import myqr from '../components/pages/myqr.vue'
-import settings from '../components/pages/settings.vue'
+import personalheader from '../components/pages/personalheader.vue';
+import myqr from '../components/pages/myqr.vue';
+import settings from '../components/pages/settings.vue';
+import details from '../components/pages/details.vue';
 
 Vue.use(Router)
 
@@ -59,6 +60,13 @@ export default new Router({
      component: settings,
      meta:{
         title:'设置'
+        }
+    },
+    {
+     path: '/details',
+     component: details,
+     meta:{
+        title:'详细资料'
         }
     }
   ]
