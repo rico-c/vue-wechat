@@ -6,16 +6,40 @@
 			"sex": 1,
 			"region": "美国",
 			"headerimg": "https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=d49c7e60ee1190ef15f69a8daf72f673/4afbfbedab64034f29596c8ba6c379310b551da2.jpg",
-			"momentsimg": "",
-			"note": "VUE是一套用于构建用户界面的渐进式框架"
+			"momentsimg": [
+				{
+					"time": 1,
+					"content":"Vue 的核心库只关注视图层",
+					"imgs": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523213064737&di=b4f2be5d7a7a3b260b11eab7fd69cf79&imgtype=0&src=http%3A%2F%2Fwww.xz7.com%2Fup%2F2017-7%2F201771392324.png"
+				},{
+					"time": 4,
+					"content":"Vue 也完全能够为复杂的单页应用提供驱动",
+					"imgs":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523213128186&di=b19afbbf938e1057437a0e5719fb9f4a&imgtype=0&src=http%3A%2F%2Fs1.51cto.com%2Fwyfs02%2FM02%2F8A%2FA1%2FwKiom1g1d4KzJLj_AAENEPluz5E910.jpg-wh_651x-s_1750868483.jpg"}
+			],
+			"note": "VUE是一套用于构建用户界面的渐进式框架",
+			"backgroundimg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523213284243&di=53dddd55fe6ce46c4a37cde1a01a0377&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0197fa570a2bfb6ac7251f05e8c74a.jpg%401280w_1l_2o_100sh.jpg"
 		},
 		{
 			"name": "马化腾",
 			"id": "pony",
 			"sex": 1,
 			"region": "广东 深圳",
-			"headerimg": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1523179718&di=a616a28e79b69e9c79666a30db3cb61a&src=http://images.enet.com.cn/2010/0518/75/1501815.jpg",
-			"momentsimg": "",
+			"headerimg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523215026185&di=97675718d3c220e7fb46453abc7d8633&imgtype=0&src=http%3A%2F%2Fwww.people.com.cn%2Fmediafile%2Fpic%2F20150624%2F51%2F10411837753251226111.jpg",
+			"momentsimg": [
+				{
+					"time": 2,
+					"content":"坚持每天发现、修正一两个小问题，不到一年就能把产品打磨出来了。",
+					"imgs":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523214853042&di=ebfcb386524ddf5e2133d0906a5acb6a&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dpixel_huitu%252C0%252C0%252C294%252C40%2Fsign%3Da80e8ff3a451f3ded7bfb124fd969573%2F32fa828ba61ea8d3c807333d9c0a304e251f58e5.jpg"
+				},{
+					"time": 5,
+					"content":"做别人做不了的事",
+					"imgs":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523214906979&di=809829e33b217104785ae17bbf86932c&imgtype=0&src=http%3A%2F%2Farticle.job5156.com%2Fuploads%2F140926%2F1411692855508040.jpg"
+				},{
+					"time": 7,
+					"content":"回顾腾讯10年业务的发展，其实就是慢慢地试",
+					"imgs":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523214974246&di=4fe151e5f93d3f780032f94723c2eb55&imgtype=0&src=http%3A%2F%2Fimg1.iyiou.com%2FCover%2F2017-08-16%2Fgongsi-tengxun.jpg"
+				}
+			],
 			"note": "テンセントボス"
 		},
 		{
@@ -23,9 +47,18 @@
 			"id": "AllenZhang",
 			"sex": 1,
 			"region": "广东 深圳",
-			"headerimg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523189917946&di=765147d9804060f552f0377e416ec004&imgtype=0&src=http%3A%2F%2Fi0.itc.cn%2F20141017%2F84e_1301d2e9_ea9e_97d7_6fdc_c234c6d1d1c3_3.jpg",
-			"momentsimg": "",
-			"note": "微信有一个基本的价值观，一个好的产品是用完即走的"
+			"headerimg": "http://i2.itc.cn/20151208/805_3081ca12_e74c_a8ce_69f1_c28c0264fa0d_4.jpg",
+			"momentsimg": [
+				{
+					"time": 3,
+					"content":"我们会觉得应该把更多的时间聚焦在用户身上",
+					"imgs":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523810174&di=a585ae582260fc91ab955cfa43a03f34&imgtype=jpg&er=1&src=http%3A%2F%2Fwaaaat.welovead.com%2Fupload%2Frss_download%2F20180305%2F600_0%2F201803051201173235.jpg"},
+				{
+					"time": 6,
+					"content":"关于微信平台的价值观是让创造发挥价值",
+					"imgs":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523215489217&di=fa900b793d92dab7c0d6d26b644f95cd&imgtype=0&src=http%3A%2F%2Fimage.tianjimedia.com%2FuploadImages%2F2018%2F079%2F58%2FI6G52P1530EO.jpg"}
+			],
+			"note": "一个好的产品是用完即走的"
 		},
 		{
 			"name": "任正非",
@@ -33,7 +66,12 @@
 			"sex": 1,
 			"region": "广东 深圳",
 			"headerimg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523189945773&di=d454e42003f2dee23a046e8236405017&imgtype=0&src=http%3A%2F%2Fy1.ifengimg.com%2F7c7ccbd3890051bf%2F2012%2F0429%2Frdn_4f9cf63ee41ba.jpg",
-			"momentsimg": "",
+			"momentsimg": [
+				{
+					"time": 6,
+					"content":"年轻人不要光从书本上学习，一定要学会从实践中学习",
+					"imgs":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523215597175&di=40df0e3580150c6377c37968561b424a&imgtype=jpg&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D3607873549%2C24252651%26fm%3D214%26gp%3D0.jpg"}
+			],
 			"note": "世界通信行业三分天下，华为将占一分"
 		},
 		{
@@ -42,7 +80,16 @@
 			"sex": 0,
 			"region": "重庆 沙坪坝",
 			"headerimg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523784683&di=2c93f15ee642d36cb09acd92eae06f2d&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201609%2F23%2F20160923224812_4FRHa.jpeg",
-			"momentsimg": "",
+			"momentsimg": [
+				{	"time": 8,
+					"content":"明日回京放放风～",
+					"imgs":"https://wx2.sinaimg.cn/mw690/63112839ly1fpu1elt5zlj22kw3vcu11.jpg"},
+				{
+					"time": 9,
+					"content":"好时节～",
+					"imgs":"https://wx4.sinaimg.cn/mw690/63112839ly1fq43g0drtbj21400qojze.jpg"
+					}
+			],
 			"note": "代表作品甄嬛传"
 		}
 	],

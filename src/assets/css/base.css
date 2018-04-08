@@ -23,11 +23,11 @@ color: #000000;
 text-decoration: none;   
 }   
 a:hover {    
-color: #999999;   
+color: #000000;   
 text-decoration: none;   
 }   
 a:active {    
-color: #999999;   
+color: #000000;   
 text-decoration: none;   
 }   
 #app{
@@ -61,6 +61,9 @@ h4{margin:5px 0 5px 0 ;}
 	align-items: center;
 	background-color: white;
 	flex-direction: column;
+}
+.cells a{
+	width:100%;
 }
 .cellimg img{
 	width:24px;

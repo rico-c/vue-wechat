@@ -1,6 +1,7 @@
 <template>
 	<div id='explorepage'>
 		<div class='cells'>
+			<router-link to="/moments">
 				<div class='cell'>
 					<div class='cellimg'>
 		           		<img src="../assets/image/find_icon-circle.png">
@@ -9,6 +10,7 @@
 		           		<p>朋友圈</p>
 		         	</div>
 		        </div>
+		    </router-link>
 		</div>
 		<div class='cells'>
 				<div class='cell'>

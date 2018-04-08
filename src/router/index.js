@@ -8,6 +8,7 @@ import personalheader from '../components/pages/personalheader.vue';
 import myqr from '../components/pages/myqr.vue';
 import settings from '../components/pages/settings.vue';
 import details from '../components/pages/details.vue';
+import moments from '../components/pages/moments.vue';
 
 Vue.use(Router)
 
@@ -67,6 +68,13 @@ export default new Router({
      component: details,
      meta:{
         title:'详细资料'
+        }
+    },
+    {
+     path: '/moments',
+     component: moments,
+     meta:{
+        title:'朋友圈'
         }
     }
   ]

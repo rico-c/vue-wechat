@@ -38,8 +38,6 @@
 			<div class='contactcell' v-for='contactinfo in contacts'>
 			<router-link :to="{path:'/details',query:{contactid:contactinfo}}">	
 				<div id="contactunit">
-					<!-- 这里放置通讯录头像 -->
-					<!-- json数据在static/data.json中 -->
 					<div class='contactcellimg'>
 			           	<img :src="contactinfo.headerimg">
 			         </div>
@@ -63,7 +61,7 @@
     		axios.get('static/data.json').then(response => 
      			(this.contacts=response.data.contacts)
     		);
-  		},
+  		}
 	}
 </script>
 <style type="text/css">

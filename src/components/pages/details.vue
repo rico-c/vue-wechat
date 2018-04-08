@@ -39,7 +39,11 @@
 		         	<div class="detailcellname">
 		           		<p>个人相册</p>
 		         	</div>
-		         	<div class="detailcontent"></div>
+		         	<div class="detailcontent">
+		         		<div class="albumshow" v-for="album in userInfo.momentsimg">
+		         			<img :src="album.imgs">
+		         		</div>
+		         	</div>
 		        </div>
 		        <div class='detailcell'>
 		         	<div class="detailcellname">
@@ -104,10 +108,13 @@
 		font-size: 14px;
 		margin:8px 5px 8px 10px;
 		width:65px;
+		display: flex;
+		align-items:center;
 	}
 	.detailcontent{
 		font-size: 14px;
 		margin:8px 0 8px 0;
+		display: flex;
 	}
 	#contactname span{
 		color:black;
@@ -132,5 +139,13 @@
 		height:14px;
 		position:relative;
 		top:2px;
+	}
+	.albumshow img {
+		width:50px;
+		height:50px;
+	}
+	.albumshow{
+		margin:0 15px 0 0;
+		overflow: hidden;
 	}
 </style>
