@@ -1,66 +1,49 @@
 {
-	"contacts": [{
-			"name": "justjavac",
-			"id": "justjavac",
-			"sex": "1",
-			"region": "天津 南开",
-			"headerimg": "",
-			"momentsimg": "",
-			"personalnote": ""
-		},
-		{
-			"name": "大漠_w3cplus.com",
-			"id": "w3cplus",
-			"sex": "1",
-			"region": "浙江 杭州",
-			"headerimg": "",
-			"momentsimg": "",
-			"personalnote": ""
-		},
+	"contacts": [
 		{
 			"name": "尤雨溪",
 			"id": "EvanYou",
-			"sex": "1",
+			"sex": 1,
 			"region": "美国",
-			"headerimg": "",
+			"headerimg": "../assets/image/yyx.jpg",
 			"momentsimg": "",
-			"personalnote": ""
+			"note": "VUE是一套用于构建用户界面的渐进式框架"
 		},
 		{
 			"name": "马化腾",
 			"id": "pony",
-			"sex": "1",
+			"sex": 1,
 			"region": "广东 深圳",
-			"headerimg": "",
+			"headerimg": "../assets/image/mht.jpg",
 			"momentsimg": "",
-			"personalnote": ""
+			"note": "テンセントボス"
 		},
 		{
 			"name": "张小龙",
 			"id": "AllenZhang",
-			"sex": "1",
+			"sex": 1,
 			"region": "广东 深圳",
-			"headerimg": "",
+			"headerimg": "../assets/image/zxl.jpg",
 			"momentsimg": "",
-			"personalnote": ""
+			"note": "微信有一个基本的价值观，一个好的产品是用完即走的"
 		},
 		{
 			"name": "任正非",
 			"id": "rzf",
-			"sex": "1",
+			"sex": 1,
 			"region": "广东 深圳",
-			"headerimg": "",
+			"headerimg": "../assets/image/rzf.jpg",
 			"momentsimg": "",
-			"personalnote": ""
+			"note": "世界通信行业三分天下，华为将占一分"
 		},
 		{
 			"name": "唐艺昕",
 			"id": "tyx",
-			"sex": "0",
+			"sex": 0,
 			"region": "重庆 沙坪坝",
-			"headerimg": "",
+			"headerimg": "../assets/image/tyx.jpg",
 			"momentsimg": "",
-			"personalnote": ""
+			"note": "代表作品甄嬛传"
 		}
 	],
 	"moments": [],

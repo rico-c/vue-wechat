@@ -37,11 +37,15 @@
 		<div class='contactcells'>		
 			<div class='contactcell' v-for='contactinfo in contacts'>
 			<router-link :to="{path:'/details',query:{contactid:contactinfo}}">	
-				<div class='contactcellimg'>
-		           	<img src="contactinfo.headerimg">
-		         </div>
-		         <div class='contactcellname'>
-					{{contactinfo.name}}
+				<div id="contactunit">
+					<!-- 这里放置通讯录头像 -->
+					<!-- json数据在static/data.json中 -->
+					<div class='contactcellimg'>
+			           	<img :src="contactinfo.headerimg">
+			         </div>
+			         <div class='contactcellname'>
+						{{contactinfo.name}}
+					</div>
 				</div>
 			</router-link>
 			</div>		
@@ -82,7 +86,7 @@
 	}
 	.contactcellname{
 		font-size: 15px;
-		display: inline-block;
+		line-height: 39px
 	}
 	.contactcell{
 		width:100%;
@@ -96,5 +100,10 @@
 		margin:0px;
 		display:flex;
 		align-items: center;
+		width:100%;
+	}
+	#contactunit{
+		width:100%;
+		display: flex;
 	}
 </style>

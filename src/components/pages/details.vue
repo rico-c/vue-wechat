@@ -8,12 +8,21 @@
 			<div class='detailcells'>
 			<div class='detailcell'>
 				<div class='detailheader'>
-		          	<img src="">
+		          	<img :src="userInfo.headerimg">
 		        </div>
 		        <div class="detailheadername">
-		          	<h4>{{userInfo.name}}</h4>
-		          	<p>微信号</p>
-		          	<p>hhh</p>
+		          	<div id="contactname">
+		          		<span>{{userInfo.name}}</span>
+		          		<span class="gender" :class="[userInfo.sex==0?'gender-female':'gender-male']"></span>
+		          	</div>
+		          	<div>
+		          		<span>微信号:</span>
+		          		<span>{{userInfo.id}}</span>
+		          	</div>
+		          	<div>
+		          		<span>昵称:</span>
+		          		<span>{{userInfo.name}}</span>
+		          	</div>
 		        </div>
 		    </div>
 		    </div>
@@ -22,7 +31,9 @@
 		         	<div class="detailcellname">
 		           		<p>地区</p>
 		         	</div>
-		         	<div class="detailcontent"></div>
+		         	<div class="detailcontent">
+		         		{{userInfo.region}}
+		         	</div>
 		        </div>
 		        <div class='detailcell'>
 		         	<div class="detailcellname">
@@ -34,7 +45,9 @@
 		         	<div class="detailcellname">
 		           		<p>个性签名</p>
 		         	</div>
-		         	<div class="detailcontent"></div>
+		         	<div class="detailcontent">
+		         		{{userInfo.note}}
+		         	</div>
 		        </div>
 			</div>
 			<div class="buttongreen"><p>发消息</p></div>
@@ -74,12 +87,42 @@
 		height:60px;
 		margin:3px;
 	}
-	.detailheadername p{
-		font-size: 13px;
+	.detailheadername span{
+		font-size: 10px;
 		color:grey;
+
 	}
 	.detailcellname{
-		font-size: 15px;
-		margin:8px 0 8px 10px;
+		font-size: 14px;
+		margin:8px 5px 8px 10px;
+		width:65px;
+	}
+	.detailcontent{
+		font-size: 14px;
+		margin:8px 0 8px 0;
+	}
+	#contactname span{
+		color:black;
+		font-size:14px;
+	}
+	.gender-male {
+	    background: url("../../assets/image/contact_male.png");
+	    background-repeat: no-repeat;
+   		background-size: contain;
+    	background-position: 50%;
+	}
+
+	.gender-female {
+    	background: url("../../assets/image/contact_female.png");
+    	background-repeat: no-repeat;
+    	background-size: contain;
+    	background-position: 50%;
+	}	
+	.gender{
+		display: inline-block;
+		width:14px;
+		height:14px;
+		position:relative;
+		top:2px;
 	}
 </style>
