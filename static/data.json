@@ -5,7 +5,7 @@
 			"id": "EvanYou",
 			"sex": 1,
 			"region": "美国",
-			"headerimg": "../assets/image/yyx.jpg",
+			"headerimg": "https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=d49c7e60ee1190ef15f69a8daf72f673/4afbfbedab64034f29596c8ba6c379310b551da2.jpg",
 			"momentsimg": "",
 			"note": "VUE是一套用于构建用户界面的渐进式框架"
 		},
@@ -14,7 +14,7 @@
 			"id": "pony",
 			"sex": 1,
 			"region": "广东 深圳",
-			"headerimg": "../assets/image/mht.jpg",
+			"headerimg": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1523179718&di=a616a28e79b69e9c79666a30db3cb61a&src=http://images.enet.com.cn/2010/0518/75/1501815.jpg",
 			"momentsimg": "",
 			"note": "テンセントボス"
 		},
@@ -23,7 +23,7 @@
 			"id": "AllenZhang",
 			"sex": 1,
 			"region": "广东 深圳",
-			"headerimg": "../assets/image/zxl.jpg",
+			"headerimg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523189917946&di=765147d9804060f552f0377e416ec004&imgtype=0&src=http%3A%2F%2Fi0.itc.cn%2F20141017%2F84e_1301d2e9_ea9e_97d7_6fdc_c234c6d1d1c3_3.jpg",
 			"momentsimg": "",
 			"note": "微信有一个基本的价值观，一个好的产品是用完即走的"
 		},
@@ -32,7 +32,7 @@
 			"id": "rzf",
 			"sex": 1,
 			"region": "广东 深圳",
-			"headerimg": "../assets/image/rzf.jpg",
+			"headerimg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523189945773&di=d454e42003f2dee23a046e8236405017&imgtype=0&src=http%3A%2F%2Fy1.ifengimg.com%2F7c7ccbd3890051bf%2F2012%2F0429%2Frdn_4f9cf63ee41ba.jpg",
 			"momentsimg": "",
 			"note": "世界通信行业三分天下，华为将占一分"
 		},
@@ -41,7 +41,7 @@
 			"id": "tyx",
 			"sex": 0,
 			"region": "重庆 沙坪坝",
-			"headerimg": "../assets/image/tyx.jpg",
+			"headerimg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523784683&di=2c93f15ee642d36cb09acd92eae06f2d&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201609%2F23%2F20160923224812_4FRHa.jpeg",
 			"momentsimg": "",
 			"note": "代表作品甄嬛传"
 		}

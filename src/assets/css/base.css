@@ -24,7 +24,11 @@ text-decoration: none;
 }   
 a:hover {    
 color: #999999;   
-text-decoration: underline;   
+text-decoration: none;   
+}   
+a:active {    
+color: #999999;   
+text-decoration: none;   
 }   
 #app{
 	width:100%;

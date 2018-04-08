@@ -94,8 +94,12 @@
 	}   
 	#back-to-setting a:hover {    
 		color: white;   
-		text-decoration: underline;   
+		text-decoration: none;   
 	}   
+	#back-to-setting a:active {    
+		color: white;   
+		text-decoration: none;   
+	} 
 	.backimg img{
 		width:55px;
 		height:55px;

@@ -85,12 +85,20 @@
 	.detailheader{
 		width:60px;
 		height:60px;
-		margin:3px;
+		margin:10px;
+	}
+	.detailheader img{
+		width:60px;
+		height:60px;
+		border-radius: 4px;
 	}
 	.detailheadername span{
 		font-size: 10px;
 		color:grey;
-
+		
+	}
+	.detailheadername{
+		margin-top:8px;
 	}
 	.detailcellname{
 		font-size: 14px;
