@@ -35,6 +35,7 @@
 		         		{{userInfo.region}}
 		         	</div>
 		        </div>
+		        <router-link :to="{path:'/albums',query:{contactid:userInfo}}">
 		        <div class='detailcell'>
 		         	<div class="detailcellname">
 		           		<p>个人相册</p>
@@ -45,6 +46,7 @@
 		         		</div>
 		         	</div>
 		        </div>
+			    </router-link>
 		        <div class='detailcell'>
 		         	<div class="detailcellname">
 		           		<p>个性签名</p>
@@ -58,13 +60,20 @@
 			<div class="buttonwhite"><p>视频通话</p></div>
 	</div>
 </template>
-<script type="text/javascript">export default{
+<script type="text/javascript">
+	export default{
+	// data() {
+ //       	return {
+ //          	contactinfo:{}
+ //        }
+ //    },
 	computed: {
             userInfo() {
                 return this.$route.query.contactid;
             }
         }
-}</script>
+    };
+</script>
 <style type="text/css">
 	#back{
 		position:fixed;

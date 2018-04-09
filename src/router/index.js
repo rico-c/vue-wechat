@@ -9,6 +9,8 @@ import myqr from '../components/pages/myqr.vue';
 import settings from '../components/pages/settings.vue';
 import details from '../components/pages/details.vue';
 import moments from '../components/pages/moments.vue';
+import albums from '../components/pages/albums.vue';
+import photo from '../components/pages/photo.vue';
 
 Vue.use(Router)
 
@@ -75,6 +77,20 @@ export default new Router({
      component: moments,
      meta:{
         title:'朋友圈'
+        }
+    },
+    {
+     path: '/albums',
+     component: albums,
+     meta:{
+        title:'相册'
+        }
+    },
+    {
+     path: '/photo',
+     component: photo,
+     meta:{
+        title:'照片'
         }
     }
   ]
