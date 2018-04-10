@@ -2,7 +2,7 @@
 	<div id="vfooter">
 		
 		<nav>
-			<router-link to="/" tag="dl">
+			<router-link to="/vdialogue" tag="dl">
 				<dt class= 'iconfont icon-wechat'></dt>
 				<dd>微信</dd>
 			</router-link>

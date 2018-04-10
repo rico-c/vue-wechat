@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import vcontact from '../components/vcontact.vue';
 import vexplore from '../components/vexplore.vue';
+import vdialogue from '../components/vdialogue.vue';
 import vme from '../components/vme.vue';
 import myprofile from'../components/pages/myprofile.vue';
 import personalheader from '../components/pages/personalheader.vue';
@@ -11,6 +12,7 @@ import details from '../components/pages/details.vue';
 import moments from '../components/pages/moments.vue';
 import albums from '../components/pages/albums.vue';
 import photo from '../components/pages/photo.vue';
+import chatview from '../components/pages/chatview.vue';
 
 Vue.use(Router)
 
@@ -28,6 +30,20 @@ export default new Router({
      component: vexplore,
      meta:{
         title:'发现'
+     }
+    },
+    {
+     path: '/',
+     component: vdialogue,
+     meta:{
+        title:'微信'
+     }
+    },
+    {
+     path: '/vdialogue',
+     component: vdialogue,
+     meta:{
+        title:'微信'
      }
     },
     {
@@ -91,6 +107,13 @@ export default new Router({
      component: photo,
      meta:{
         title:'照片'
+        }
+    },
+    {
+     path: '/chatview',
+     component: chatview,
+     meta:{
+        title:''
         }
     }
   ]

@@ -7,9 +7,9 @@
 			</div>
 		</router-link>
 
-		<div id="thephoto"><img :src="theInfo.imgs"></div>
+		<div id="thephoto"><img :src="thepicture.imgs"></div>
 		<div id="thebottom">
-			<div id="thecontent">{{theInfo.content}}</div>
+			<div id="thecontent">{{thepicture.content}}</div>
 			<div id="theicon">
 				<div id="theic">&nbsp;&nbsp;♡赞&nbsp;&nbsp;&nbsp;□评论</div>
 			</div>>
@@ -19,9 +19,17 @@
 <script type="text/javascript">
 	export default{
 		computed: {
-            theInfo() {
+            userInfo() {
                 return this.$route.query.contactid;
+            },
+            thepicture() {
+            	return this.$route.query.thepic;
             }
+        },
+        method:{
+        	routerback(){
+        		this.$router.back(-1)
+        	}
         }
 	}
 </script>

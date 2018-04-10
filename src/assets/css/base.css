@@ -10,6 +10,7 @@ body{
 	padding:0;
 	background-color: #efeff4;
 	height:100%;
+
 }
 a{
 	text-decoration: none;
@@ -25,11 +26,15 @@ text-decoration: none;
 a:hover {    
 color: #000000;   
 text-decoration: none;   
+
 }   
 a:active {    
 color: #000000;   
 text-decoration: none;   
 }   
+/*a:active div{
+	background-color:#efeff4;
+}*/
 #app{
 	width:100%;
 	margin:0;
@@ -106,4 +111,7 @@ h4{margin:5px 0 5px 0 ;}
 	text-align: center;
 	line-height: 35px;
 	color:black;
+}
+::-webkit-scrollbar{
+  display:none;
 }

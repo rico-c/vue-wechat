@@ -1,6 +1,6 @@
 <template>
 	<div id="vheader">
-		{{$route.meta.title||'微信'}}
+		{{$route.meta.title}}
 	</div>
 </template>
 <script type="text/javascript">

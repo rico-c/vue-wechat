@@ -22,10 +22,10 @@
 		<div id="mymoments">
 			<div id="momentslice" v-for="themoment in theuserInfo.momentsimg">
 				<div id="timestamp">{{themoment.time}}小时前</div>
-				<router-link :to="{path:'/photo',query:{contactid:themoment}}">
+				<router-link :to="{path:'/photo',query:{contactid:userInfo,thepic:themoment}}">
 					<div><img :src="themoment.imgs"></div>
 				</router-link>
-				<router-link :to="{path:'/photo',query:{contactid:themoment}}">
+				<router-link :to="{path:'/photo',query:{contactid:userInfo,thepic:themoment}}">
 					<div>{{themoment.content}}</div>
 				</router-link>
 			</div>
