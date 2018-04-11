@@ -6,9 +6,11 @@
 					<div id="chatheader"><img :src="thedialoge.headerimg"></div>
 					<div id="chatrightbar">
 						<div id="namebar"><span class="font">{{thedialoge.name}}</span><span id="rightsite">{{thedialoge.lasttime}}</span></div>
-						<div id="scriptbar">{{thedialoge.conversation[thedialoge.conversation.length-1]}}</div>
-						<!-- thedialoge.conversation[thedialoge.conversation.length-1].speaker,
-			         	thedialoge.conversation[thedialoge.conversation.length-1].content -->
+						<!-- 此处浏览器报错Error in render: "TypeError: Cannot read property 'content' of undefined" -->
+						<div id="scriptbar">{{(thedialoge.conversation[thedialoge.conversation.length-1].content)}}</div>
+						<!-- 换成如下则可以显示conversation部分
+			         	thedialoge.conversation[thedialoge.conversation.length-1]  -->
+			         	<!-- 对应的json数据在data.json的116行 -->
 					</div>
 				</div>	
 			</router-link>		
