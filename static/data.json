@@ -122,14 +122,17 @@
 			"conversation":[
 				{
 					"speaker":"尤雨溪",
+					"position":"left",
 					"content":"小伙子你觉得VUE和REACT、Angular哪个好？"
 				},
 				{
 					"speaker":"曹昱RICO",
+					"position":"right",
 					"content":"The core idea is don't put all your eggs in a single basket. Picking a JavaScript framework is not a one-or-the-other scenario; you don't have to stick with one forever. And no matter what others say, it's impossible to make the best decision for yourself without trying them out and get first-hand experience with it. If you just go with one and ignore the others, you are almost certainly doing it wrong."
 				},
 				{
 					"speaker": "尤雨溪",
+					"position":"left",
 					"content": "说的不错，怎么听起来感觉有点耳熟？"
 				}
 			]
@@ -142,14 +145,17 @@
 			"conversation":[
 				{
 					"speaker":"任正非",
+					"position":"left",
 					"content":"小伙子你觉得VUE和REACT、Angular哪个好？"
 				},
 				{
 					"speaker":"曹昱RICO",
+					"position":"right",
 					"content":"The core idea is don't put all your eggs in a single basket. Picking a JavaScript framework is not a one-or-the-other scenario; you don't have to stick with one forever. And no matter what others say, it's impossible to make the best decision for yourself without trying them out and get first-hand experience with it. If you just go with one and ignore the others, you are almost certainly doing it wrong."
 				},
 				{
 					"speaker":"任正非",
+					"position":"left",
 					"content":"说的不错，怎么听起来感觉有点耳熟？"
 				}
 			]
@@ -162,14 +168,18 @@
 			"conversation":[
 				{
 					"speaker":"马化腾",
+					"position":"left",
 					"content":"小伙子你觉得VUE和REACT、Angular哪个好？"
 				},
 				{
 					"speaker":"曹昱RICO",
+					"position":"right",
 					"content":"The core idea is don't put all your eggs in a single basket. Picking a JavaScript framework is not a one-or-the-other scenario; you don't have to stick with one forever. And no matter what others say, it's impossible to make the best decision for yourself without trying them out and get first-hand experience with it. If you just go with one and ignore the others, you are almost certainly doing it wrong."
 				},
 				{
 					"speaker":"马化腾",
+					"position":"left",
+					"position":"right",
 					"content":"说的不错，怎么听起来感觉有点耳熟？"
 				}
 			]

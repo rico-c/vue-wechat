@@ -72,7 +72,7 @@
                 return this.$route.query.contactid;
             }
         }
-    };
+    }
 </script>
 <style type="text/css">
 	#back{
