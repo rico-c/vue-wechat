@@ -10,7 +10,7 @@
 				<div class='detailheader'>
 		          	<img :src="userInfo.headerimg">
 		        </div>
-		        <div class="detailheadername">
+		        <div class="detailheadername" v-if="userInfo">
 		          	<div id="contactname">
 		          		<span>{{userInfo.name}}</span>
 		          		<span class="gender" :class="[userInfo.sex==0?'gender-female':'gender-male']"></span>
@@ -31,7 +31,7 @@
 		         	<div class="detailcellname">
 		           		<p>地区</p>
 		         	</div>
-		         	<div class="detailcontent">
+		         	<div class="detailcontent" v-if="userInfo">
 		         		{{userInfo.region}}
 		         	</div>
 		        </div>
@@ -40,7 +40,7 @@
 		         	<div class="detailcellname">
 		           		<p>个人相册</p>
 		         	</div>
-		         	<div class="detailcontent">
+		         	<div class="detailcontent" v-if="userInfo">
 		         		<div class="albumshow" v-for="album in userInfo.momentsimg">
 		         			<img :src="album.imgs">
 		         		</div>
@@ -51,7 +51,7 @@
 		         	<div class="detailcellname">
 		           		<p>个性签名</p>
 		         	</div>
-		         	<div class="detailcontent">
+		         	<div class="detailcontent" v-if="userInfo">
 		         		{{userInfo.note}}
 		         	</div>
 		        </div>

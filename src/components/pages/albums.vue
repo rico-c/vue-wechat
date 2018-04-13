@@ -10,16 +10,16 @@
 		<div id="mybackground">
 			<img :src="theuserInfo.backgroundimg">
 		</div>
-		<div id="nameandheader">
+		<div id="nameandheader" v-if="theuserInfo">
 					<span>{{theuserInfo.name}}</span>
 					<router-link to="/details">
 					<span><img :src="theuserInfo.headerimg"></span>
 					</router-link>
 		</div>	
-		<div id="thenote">
+		<div id="thenote" v-if="theuserInfo">
 			<span>{{theuserInfo.note}}</span>
 		</div>
-		<div id="mymoments">
+		<div id="mymoments" v-if="theuserInfo">
 			<div id="momentslice" v-for="themoment in theuserInfo.momentsimg">
 				<div id="timestamp">{{themoment.time}}小时前</div>
 				<router-link :to="{path:'/photo',query:{contactid:userInfo,thepic:themoment}}">

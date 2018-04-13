@@ -34,7 +34,7 @@
 		         	</div>
 		        </div>
 		</div>
-		<div class='contactcells'>		
+		<div class='contactcells' v-if="contacts">		
 			<div class='contactcell' v-for='contactinfo in contacts'>
 			<router-link :to="{path:'/details',query:{contactid:contactinfo}}">	
 				<div id="contactunit">
