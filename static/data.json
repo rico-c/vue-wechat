@@ -117,21 +117,23 @@
 		{
 			"name":"尤雨溪",
 			"member":["尤雨溪","曹昱RICO"],
+			"type":0,
+			"num":0,
 			"lasttime":"上午7：08",
 			"headerimg":"https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=d49c7e60ee1190ef15f69a8daf72f673/4afbfbedab64034f29596c8ba6c379310b551da2.jpg",
 			"conversation":[
 				{
-					"speaker":"尤雨溪",
+					"speaker":"https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=d49c7e60ee1190ef15f69a8daf72f673/4afbfbedab64034f29596c8ba6c379310b551da2.jpg",
 					"position":"left",
 					"content":"小伙子你觉得VUE和REACT、Angular哪个好？"
 				},
 				{
-					"speaker":"曹昱RICO",
+					"speaker":"https://upload-images.jianshu.io/upload_images/9672967-451a147b4ed26b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/700",
 					"position":"right",
 					"content":"The core idea is don't put all your eggs in a single basket. Picking a JavaScript framework is not a one-or-the-other scenario; you don't have to stick with one forever. And no matter what others say, it's impossible to make the best decision for yourself without trying them out and get first-hand experience with it. If you just go with one and ignore the others, you are almost certainly doing it wrong."
 				},
 				{
-					"speaker": "尤雨溪",
+					"speaker": "https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=d49c7e60ee1190ef15f69a8daf72f673/4afbfbedab64034f29596c8ba6c379310b551da2.jpg",
 					"position":"left",
 					"content": "说的不错，怎么听起来感觉有点耳熟？"
 				}
@@ -140,63 +142,99 @@
 		{
 			"name":"任正非",
 			"member":["任正非","曹昱RICO"],
+			"type":0,
+			"num":1,
 			"lasttime":"上午7：18",
 			"headerimg":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523189945773&di=d454e42003f2dee23a046e8236405017&imgtype=0&src=http%3A%2F%2Fy1.ifengimg.com%2F7c7ccbd3890051bf%2F2012%2F0429%2Frdn_4f9cf63ee41ba.jpg",
 			"conversation":[
 				{
-					"speaker":"任正非",
+					"speaker":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523189945773&di=d454e42003f2dee23a046e8236405017&imgtype=0&src=http%3A%2F%2Fy1.ifengimg.com%2F7c7ccbd3890051bf%2F2012%2F0429%2Frdn_4f9cf63ee41ba.jpg",
 					"position":"left",
-					"content":"小伙子你觉得VUE和REACT、Angular哪个好？"
+					"content":"要么成为领先者，要么被淘汰"
 				},
 				{
-					"speaker":"曹昱RICO",
+					"speaker":"https://upload-images.jianshu.io/upload_images/9672967-451a147b4ed26b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/700",
 					"position":"right",
-					"content":"The core idea is don't put all your eggs in a single basket. Picking a JavaScript framework is not a one-or-the-other scenario; you don't have to stick with one forever. And no matter what others say, it's impossible to make the best decision for yourself without trying them out and get first-hand experience with it. If you just go with one and ignore the others, you are almost certainly doing it wrong."
-				},
-				{
-					"speaker":"任正非",
-					"position":"left",
-					"content":"说的不错，怎么听起来感觉有点耳熟？"
+					"content":"任总说的对！"
 				}
 			]
 		},
 		{
 			"name":"马化腾",
 			"member":["马化腾","曹昱RICO"],
+			"type":0,
+			"num":2,
 			"lasttime":"上午8：56",
 			"headerimg":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523215026185&di=97675718d3c220e7fb46453abc7d8633&imgtype=0&src=http%3A%2F%2Fwww.people.com.cn%2Fmediafile%2Fpic%2F20150624%2F51%2F10411837753251226111.jpg",
 			"conversation":[
 				{
-					"speaker":"马化腾",
+					"speaker":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523215026185&di=97675718d3c220e7fb46453abc7d8633&imgtype=0&src=http%3A%2F%2Fwww.people.com.cn%2Fmediafile%2Fpic%2F20150624%2F51%2F10411837753251226111.jpg",
 					"position":"left",
-					"content":"小伙子你觉得VUE和REACT、Angular哪个好？"
+					"content":"我认为腾讯的成功，首先就是技术、产品和用户感这个要非常强。第二，团队稳健、股东架构稳健很重要。"
 				},
 				{
-					"speaker":"曹昱RICO",
+					"speaker":"https://upload-images.jianshu.io/upload_images/9672967-451a147b4ed26b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/700",
 					"position":"right",
-					"content":"The core idea is don't put all your eggs in a single basket. Picking a JavaScript framework is not a one-or-the-other scenario; you don't have to stick with one forever. And no matter what others say, it's impossible to make the best decision for yourself without trying them out and get first-hand experience with it. If you just go with one and ignore the others, you are almost certainly doing it wrong."
+					"content":"回顾腾讯10年业务的发展，其实就是慢慢地试，有信心，步子才会逐渐大一点。"
 				},
 				{
-					"speaker":"马化腾",
+					"speaker":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523215026185&di=97675718d3c220e7fb46453abc7d8633&imgtype=0&src=http%3A%2F%2Fwww.people.com.cn%2Fmediafile%2Fpic%2F20150624%2F51%2F10411837753251226111.jpg",
 					"position":"left",
+					"content":"在中国互联网发展的早期，对大多数网民来说，据我们了解接触，很多是浏览器都不知道，电子邮件也不知道，就知道上QQ就是上网。"
+				},
+				{
+					"speaker":"https://upload-images.jianshu.io/upload_images/9672967-451a147b4ed26b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/700",
 					"position":"right",
-					"content":"说的不错，怎么听起来感觉有点耳熟？"
+					"content":"生命在于永不止息的创造。"
 				}
 			]
 		},
 		{
 			"name":"重庆大学校友群",
 			"member":["任正非","唐艺昕","曹昱RICO"],
+			"type":1,
+			"num":3,
 			"lasttime":"上午9：18",
-			"headerimg":"http://m.qpic.cn/psb?/66319bf4-61fa-43f9-9781-f793099f136c/SbpN7hVI6Egxa05b8T74Nswgx1DPZeCbCfLcV6NDR7c!/b/dJUAAAAAAAAA&bo=GwEbAQAAAAARFyA!&rf=viewer_4",
-			"conversation":""
+			"headerimg":"https://upload-images.jianshu.io/upload_images/9672967-aa376c146059a6cf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/283",
+			"conversation":[
+				{	
+					"talker":"任正非",
+					"speaker":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523189945773&di=d454e42003f2dee23a046e8236405017&imgtype=0&src=http%3A%2F%2Fy1.ifengimg.com%2F7c7ccbd3890051bf%2F2012%2F0429%2Frdn_4f9cf63ee41ba.jpg",
+					"position":"left",
+					"content":"1929年刘湘创办重庆大学，20世纪40年代成为有文、理、工、商、法、医6个学院的国立综合性大学，1942年更名为国立重庆大学。"
+				},{	
+					"talker":"唐艺昕",
+					"speaker":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523784683&di=2c93f15ee642d36cb09acd92eae06f2d&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201609%2F23%2F20160923224812_4FRHa.jpeg",
+					"position":"left",
+					"content":"马寅初、李四光等一大批学者来到重庆大学教学。"
+				},{	
+					"talker":"曹昱RICO",
+					"speaker":"https://upload-images.jianshu.io/upload_images/9672967-451a147b4ed26b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/700",
+					"position":"right",
+					"content":"耐劳苦,尚俭朴,勤学业,爱国家"
+				}
+			]
 		},
 		{
 			"name":"微信产品群",
-			"member":["任正非","唐艺昕","曹昱RICO"],
+			"member":["马化腾","张小龙","曹昱RICO"],
+			"type":1,
+			"num":4,
 			"lasttime":"上午10：00",
-			"headerimg":"http://m.qpic.cn/psb?/66319bf4-61fa-43f9-9781-f793099f136c/d2QzMTtlhIPIZ1Lve5IBX3SDOUbfxYsGmAsS2AQiSMQ!/b/dGgBAAAAAAAA&bo=GwEbAQAAAAARFyA!&rf=viewer_4",
-			"conversation":""
+			"headerimg":"https://upload-images.jianshu.io/upload_images/9672967-237246372d3eb09f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/283",
+			"conversation":[
+				{	
+					"talker":"马化腾",
+					"speaker":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523215026185&di=97675718d3c220e7fb46453abc7d8633&imgtype=0&src=http%3A%2F%2Fwww.people.com.cn%2Fmediafile%2Fpic%2F20150624%2F51%2F10411837753251226111.jpg",
+					"position":"left",
+					"content":"微信是什么"
+				},{
+					"talker":"张小龙",
+					"speaker":"http://i2.itc.cn/20151208/805_3081ca12_e74c_a8ce_69f1_c28c0264fa0d_4.jpg",
+					"position":"left",
+					"content":"你如何使用微信，决定了微信是什么。"
+				}
+			]
 		}
 	],
 	"moments": [

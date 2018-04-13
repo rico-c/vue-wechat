@@ -1,6 +1,5 @@
 <template>
-	<div id="vfooter">
-		
+	<div id="vfooter">	
 		<nav>
 			<router-link to="/vdialogue" tag="dl">
 				<dt class= 'iconfont icon-wechat'></dt>
@@ -19,7 +18,6 @@
 				<dd>我</dd>
 			</router-link>				
 		</nav>
-
 	</div>
 </template>
 <script type="text/javascript">

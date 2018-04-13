@@ -56,17 +56,19 @@
 		         	</div>
 		        </div>
 			</div>
+			<router-link to="/chatview">
 			<div class="buttongreen"><p>发消息</p></div>
+			</router-link>
 			<div class="buttonwhite"><p>视频通话</p></div>
 	</div>
 </template>
 <script type="text/javascript">
 	export default{
-	// data() {
- //       	return {
- //          	contactinfo:{}
- //        }
- //    },
+	data() {
+       	return {
+          	contactinfo:{}
+        }
+    },
 	computed: {
             userInfo() {
                 return this.$route.query.contactid;

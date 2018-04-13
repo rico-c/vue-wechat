@@ -49,6 +49,7 @@
 		        </div>
 		</div>
 		<div class='cells'>
+				<a href="https://wqs.jd.com/data/coss/tolerant/new/3_1.shtml">
 				<div class='cell'>
 					<div class='cellimg'>
 		           		<img src="../assets/image/find_icon-shopping.png">
@@ -57,6 +58,8 @@
 		           		<p>购物</p>
 		         	</div>
 		        </div>
+		        </a>
+		        <a href="http://game.qq.com/">
 		        <div class='cell'>
 					<div class='cellimg'>
 		           		<img src="../assets/image/find_icon-moregame.png">
@@ -65,8 +68,10 @@
 		           		<p>游戏</p>
 		         	</div>
 		        </div>
+				</a>
 		</div>
 		<div class='cells'>
+			<a href="https://mp.weixin.qq.com/cgi-bin/wx">
 				<div class='cell'>
 					<div class='cellimg'>
 		           		<img src="../assets/image/timg.png">
@@ -75,6 +80,7 @@
 		           		<p>小程序</p>
 		         	</div>
 		        </div>
+		    </a>
 		</div>
 	</div>
 </template>

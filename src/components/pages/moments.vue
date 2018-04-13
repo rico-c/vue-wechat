@@ -6,7 +6,7 @@
 			</router-link>
 		</div>
 		<div id="mybackground"><img src="../../assets/image/mybackground.jpg"></div>
-		<div id="nameandheader">
+		<div id="nameandhead">
 				<span>曹昱RICO</span>
 				<span><img src="../../assets/image/rico.png"></span>
 		</div>	
@@ -65,17 +65,17 @@
 	#backtoexplore a{
 		color:white;
 	}
-	#nameandheader{
+	#nameandhead{
 		position:absolute;
 		right:10px;
 		top:175px;
 	}
-	#nameandheader img{
+	#nameandhead img{
 		width:55px;
 		height:55px;
 		border:solid 0.5px #d9d9d9;
 	}
-	#nameandheader span{
+	#nameandhead span{
 		color:white;
 		vertical-align:top;
 	}

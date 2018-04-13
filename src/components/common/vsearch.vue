@@ -13,14 +13,14 @@ export default {}
 		position:relative;
 		width:100%;
 		height:35px;
-		background:efeff4;
+		background:#efeff4;
 	}
 	#searchinput{
 		position:absolute;
 		width:100%;
 		height:28px;
 	}
-	input{
+	#searchinput input{
 		position:relative;
 		border-radius: 5px;
 		border:0px;
