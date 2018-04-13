@@ -1,9 +1,9 @@
 <template>
 	<div id="myprofile">
-		<div id="back-to-setting">
-			<router-link to="/vme">
+		<div id="back-to-setting" @click="back">
+			<!-- <router-link to="/vme"> -->
 			<span>〈 </span><span>我</span>
-			</router-link>
+			<!-- </router-link> -->
 		</div>
 		<div class='profilecells'>
 			<router-link to="/personalheader">
@@ -73,7 +73,11 @@
 </template>
 <script type="text/javascript">
 	export default {
-
+		methods:{
+			back(){
+				this.$router.go(-1)
+			}
+		}
 	}
 </script>
 <style type="text/css">

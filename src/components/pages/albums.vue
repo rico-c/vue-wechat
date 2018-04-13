@@ -1,10 +1,10 @@
 <template>
 	<div id="albums">
-		<router-link to="/details">
-			<div id="todetails">
+		<!-- <router-link to="/details"> -->
+			<div id="todetails" @click="back">
 				<span>〈 </span><span>详细资料</span>
 			</div>
-		</router-link>
+		<!-- </router-link> -->
 		<div id="backtoexplore">
 		</div>
 		<div id="mybackground">
@@ -34,16 +34,21 @@
 </template>
 <script type="text/javascript">
 	export default{
-	// data() {
- //       	return {
- //          	userInfo:{}
- //        }
- //    },
+	data() {
+       	return {
+          	userInfo:{}
+        }
+    },
 	computed: {
         theuserInfo() {
             return this.$route.query.contactid;
             }
-        }
+        },
+    methods:{
+			back(){
+				this.$router.go(-1)
+			}
+		}
 	}
 </script>
 <style type="text/css">

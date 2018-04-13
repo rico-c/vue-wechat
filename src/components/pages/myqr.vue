@@ -1,15 +1,23 @@
 <template>
 	<div id="myqr">
-		<router-link to="/myprofile">
-		<div id="backtoprofile"><span>〈 </span><span>个人信息</span></div>
-		</router-link>
+		<!-- <router-link to="/myprofile"> -->
+		<div id="backtoprofile" @click="back">
+			<span>〈 </span><span>个人信息</span>
+		</div>
+		<!-- </router-link> -->
 		<div class="qrimg">
 			<img src="../../assets/image/myqr.png">
 		</div>
 	</div>
 </template>
 <script type="text/javascript">
-	export default{}
+	export default{
+		methods:{
+			back(){
+				this.$router.go(-1)
+			}
+		}
+	}
 </script>
 <style type="text/css">
 	.middle{

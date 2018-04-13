@@ -1,9 +1,9 @@
 <template>
 	<div id="details">
-			<div id="back">
-				<router-link to="/vcontact">
+			<div id="back" @click="back">
+				<!-- <router-link to="/vcontact"> -->
 				<span>〈 </span><span>返回</span>
-				</router-link>
+			<!-- 	</router-link> -->
 			</div>
 			<div class='detailcells'>
 			<div class='detailcell'>
@@ -73,7 +73,12 @@
             userInfo() {
                 return this.$route.query.contactid;
             }
-        }
+        },
+    methods:{
+			back(){
+				this.$router.go(-1)
+			}
+		}
     }
 </script>
 <style type="text/css">

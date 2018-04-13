@@ -1,11 +1,11 @@
 <template>
 	<div id="photo">
 
-		<router-link to="/albums">
-			<div id="toalbum">
+		<!-- <router-link to="/albums"> -->
+			<div id="toalbum" @click="back">
 				<span>〈 </span><span>返回</span>
 			</div>
-		</router-link>
+		<!-- </router-link> -->
 
 		<div id="thephoto"><img :src="thepicture.imgs"></div>
 		<div id="thebottom">
@@ -26,11 +26,11 @@
             	return this.$route.query.thepic;
             }
         },
-        method:{
-        	routerback(){
-        		this.$router.back(-1)
-        	}
-        }
+        methods:{
+			back(){
+				this.$router.go(-1)
+			}
+		}
 	}
 </script>
 <style type="text/css">
@@ -54,8 +54,7 @@
 	}
 	#thephoto{
 		width:100%;
-		top:50%;
-		margin-top:-30px;
+		margin:auto;
 	}
 	#thephoto img{
 		width:100%;

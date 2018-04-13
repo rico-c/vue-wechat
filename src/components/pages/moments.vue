@@ -1,9 +1,9 @@
 <template>
 	<div id="moments">
-		<div id="backtoexplore">
-			<router-link to="/vexplore">
+		<div id="backtoexplore" @click="back">
+			<!-- <router-link to="/vexplore"> -->
 				<span>〈 </span><span>返回</span>
-			</router-link>
+			<!-- </router-link> -->
 		</div>
 		<div id="mybackground"><img src="../../assets/image/mybackground.jpg"></div>
 		<div id="nameandhead">
@@ -36,7 +36,12 @@
     		axios.get('static/data.json').then(response => 
      			(this.moments=response.data.moments)
     		);
-  		}
+  		},
+  		methods:{
+			back(){
+				this.$router.go(-1)
+			}
+		}
 	}
 </script>
 <style type="text/css">

@@ -5,7 +5,7 @@
 			</div>
 			<div id="chatdetails"><span class="iconfont icon-chat-friends"></span></div>
 			<div id="chattitle">{{$route.query.chatidname}}</div>			
-			<div id="chatarea">
+			<div id="chatarea" v-if="dialogues[$route.query.chatid]">
 				<div v-for="dia in dialogues[$route.query.chatid].conversation" :class=dia.position class="chatbox">
 					<div class="chatviewhead"><img :src="dia.speaker"></div>
 					<div class="chatviewbody">{{dia.content}}</div>
