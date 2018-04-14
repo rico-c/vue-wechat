@@ -1,14 +1,14 @@
 <template>
+	<transition name="fade">
 	<div id="myqr">
-		<!-- <router-link to="/myprofile"> -->
 		<div id="backtoprofile" @click="back">
 			<span>〈 </span><span>个人信息</span>
 		</div>
-		<!-- </router-link> -->
 		<div class="qrimg">
 			<img src="../../assets/image/myqr.png">
 		</div>
 	</div>
+</transition>
 </template>
 <script type="text/javascript">
 	export default{
@@ -20,6 +20,12 @@
 	}
 </script>
 <style type="text/css">
+	.fade-enter-active{
+ 		 transition: opacity .3s;
+	}
+	.fade-enter{
+ 		 opacity: 0;
+	}
 	.middle{
 		height:100%;
 	}

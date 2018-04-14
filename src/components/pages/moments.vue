@@ -1,9 +1,8 @@
 <template>
+	<transition name="fade">
 	<div id="moments">
 		<div id="backtoexplore" @click="back">
-			<!-- <router-link to="/vexplore"> -->
 				<span>〈 </span><span>返回</span>
-			<!-- </router-link> -->
 		</div>
 		<div id="mybackground"><img src="../../assets/image/mybackground.jpg"></div>
 		<div id="nameandhead">
@@ -24,6 +23,7 @@
 			</div>
 		</div>
 	</div>
+</transition>
 </template>
 <script type="text/javascript">
 	import axios from 'axios'
@@ -45,6 +45,12 @@
 	}
 </script>
 <style type="text/css">
+	.fade-enter-active{
+ 		 transition: opacity .3s;
+	}
+	.fade-enter{
+ 		 opacity: 0;
+	}
 	#moments{
 		position:absolute;
 		height:630px;

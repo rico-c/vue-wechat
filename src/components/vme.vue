@@ -19,9 +19,11 @@
 				<div class='cellimg'>
 	           		<img src="../assets/image/me_more-my-bank-card.png">
 	         	</div>
+	         	<a href="https://pay.weixin.qq.com/index.php/core/home">
 	         	<div class="cellname">
 	           		<p>钱包</p>
 	         	</div>
+	         	</a>
 	         </div>
 		</div>
 		<div class='cells'>
@@ -37,9 +39,11 @@
 				<div class='cellimg'>
            			<img src="../assets/image/me_more-my-album.png">
          		</div>
+         		<router-link to="/moments">
          		<div class="cellname">
            			<p>相册</p>
            		</div>
+         	  	</router-link>
          	</div>
          	<div class='cell'>
 				<div class='cellimg'>

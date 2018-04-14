@@ -1,12 +1,12 @@
 <template>
+	<transition name="fade">
 	<div id="personalheader">
-		<!-- <router-link to="/myprofile"> -->
 		<div id="backtoprofile" @click="back"> 
 			<span>〈 </span><span>个人信息</span>
 		</div>
-		<!-- </router-link> -->
 		<div id="personalheader-img"><img src="../../assets/image/rico.png"></div>
 	</div>
+</transition>
 </template>
 <script type="text/javascript">
 	export default{
@@ -18,6 +18,12 @@
 	}
 </script>
 <style type="text/css">
+	.fade-enter-active{
+ 		 transition: opacity .3s;
+	}
+	.fade-enter{
+ 		 opacity: 0;
+	}
 	.middle{
 		height:100%;
 	}

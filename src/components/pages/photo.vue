@@ -1,39 +1,57 @@
 <template>
+	<transition name="fade">
 	<div id="photo">
-
-		<!-- <router-link to="/albums"> -->
 			<div id="toalbum" @click="back">
 				<span>〈 </span><span>返回</span>
 			</div>
-		<!-- </router-link> -->
 
-		<div id="thephoto"><img :src="thepicture.imgs"></div>
-		<div id="thebottom">
-			<div id="thecontent">{{thepicture.content}}</div>
+		<div id="thephoto" v-if="contacts[usernum]&&contacts[usernum].momentsimg[picnum]" >
+			<img :src="contacts[usernum].momentsimg[picnum].imgs">
+		</div>
+		<div id="thebottom" v-if="contacts[usernum]&&contacts[usernum].momentsimg[picnum]">
+			<div id="thecontent">{{contacts[usernum].momentsimg[picnum].content}}</div>
 			<div id="theicon">
 				<div id="theic">&nbsp;&nbsp;♡赞&nbsp;&nbsp;&nbsp;□评论</div>
 			</div>>
 		</div>
 	</div>
+</transition>
 </template>
 <script type="text/javascript">
+	import axios from 'axios'
 	export default{
+		data() {
+      	 	return {
+          		contacts:[]
+       		 }
+   		 },
 		computed: {
-            userInfo() {
-                return this.$route.query.contactid;
+          	usernum() {
+          	  return this.$route.query.contactid;
             },
-            thepicture() {
-            	return this.$route.query.thepic;
+          	picnum() {
+          	  return this.$route.query.thepic;
             }
         },
         methods:{
 			back(){
 				this.$router.go(-1)
 			}
-		}
+		},
+		created() {
+    		axios.get('static/data.json').then(response => 
+     			(this.contacts=response.data.contacts)
+    		);
+  		}
 	}
 </script>
 <style type="text/css">
+	.fade-enter-active{
+ 		 transition: opacity .3s;
+	}
+	.fade-enter{
+ 		 opacity: 0;
+	}
 	#toalbum{
 		position:fixed;
 		top:12px;

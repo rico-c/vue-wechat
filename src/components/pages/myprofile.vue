@@ -1,9 +1,7 @@
 <template>
 	<div id="myprofile">
 		<div id="back-to-setting" @click="back">
-			<!-- <router-link to="/vme"> -->
 			<span>〈 </span><span>我</span>
-			<!-- </router-link> -->
 		</div>
 		<div class='profilecells'>
 			<router-link to="/personalheader">
@@ -81,6 +79,12 @@
 	}
 </script>
 <style type="text/css">
+	.fade-enter-active{
+ 		 transition: opacity .3s;
+	}
+	.fade-enter{
+ 		 opacity: 0;
+	}
 	#back-to-setting{
 		position:fixed;
 		top:12px;

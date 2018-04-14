@@ -1,9 +1,7 @@
 <template>
 	<div id="settings">
 		<div id="back-to-setting" @click="back">
-			<!-- <router-link to="/vme"> -->
 			<span>〈 </span><span>我</span>
-			<!-- </router-link> -->
 		</div>
 		<div class='cells'>
 			<div class='cell'>

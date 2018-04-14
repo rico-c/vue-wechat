@@ -1,46 +1,47 @@
 <template>
+	<transition name="fade">
 	<div id="albums">
-		<!-- <router-link to="/details"> -->
 			<div id="todetails" @click="back">
 				<span>〈 </span><span>详细资料</span>
 			</div>
-		<!-- </router-link> -->
 		<div id="backtoexplore">
 		</div>
-		<div id="mybackground">
-			<img :src="theuserInfo.backgroundimg">
+		<div id="mybackground" v-if="contacts[usernum]">
+			<img :src="contacts[usernum].backgroundimg">
 		</div>
-		<div id="nameandheader" v-if="theuserInfo">
-					<span>{{theuserInfo.name}}</span>
-					<router-link to="/details">
-					<span><img :src="theuserInfo.headerimg"></span>
+		<div id="nameandheader" v-if="contacts[usernum]">
+					<span>{{contacts[usernum].name}}</span>
+					<router-link :to="{path:'/details',query:{contactid:usernum}}">
+					<span><img :src="contacts[usernum].headerimg"></span>
 					</router-link>
 		</div>	
-		<div id="thenote" v-if="theuserInfo">
-			<span>{{theuserInfo.note}}</span>
+		<div id="thenote" v-if="contacts[usernum]">
+			<span>{{contacts[usernum].note}}</span>
 		</div>
-		<div id="mymoments" v-if="theuserInfo">
-			<div id="momentslice" v-for="themoment in theuserInfo.momentsimg">
+		<div id="mymoments" v-if="contacts[usernum]">
+			<div id="momentslice" v-for="themoment in contacts[usernum].momentsimg">
 				<div id="timestamp">{{themoment.time}}小时前</div>
-				<router-link :to="{path:'/photo',query:{contactid:userInfo,thepic:themoment}}">
+				<router-link :to="{path:'/photo',query:{contactid:usernum,thepic:themoment.num}}">
 					<div><img :src="themoment.imgs"></div>
 				</router-link>
-				<router-link :to="{path:'/photo',query:{contactid:userInfo,thepic:themoment}}">
+				<router-link :to="{path:'/photo',query:{contactid:usernum,thepic:themoment.num}}">
 					<div>{{themoment.content}}</div>
 				</router-link>
 			</div>
 		</div>
 	</div>
+</transition>
 </template>
 <script type="text/javascript">
+	import axios from 'axios'
 	export default{
 	data() {
        	return {
-          	userInfo:{}
+          	contacts:[]
         }
     },
 	computed: {
-        theuserInfo() {
+        usernum() {
             return this.$route.query.contactid;
             }
         },
@@ -48,10 +49,21 @@
 			back(){
 				this.$router.go(-1)
 			}
-		}
+		},
+	created() {
+    		axios.get('static/data.json').then(response => 
+     			(this.contacts=response.data.contacts)
+    		);
+  		}
 	}
 </script>
 <style type="text/css">
+	.fade-enter-active{
+ 		 transition: opacity .3s;
+	}
+	.fade-enter{
+ 		 opacity: 0;
+	}
 	#mybackground{
 		width:100%;
 		height:200px

@@ -1,4 +1,5 @@
 <template>
+	<transition name="fade">
 	<div id="chatview">
 			<div id="back" @click="back">
 				<span>〈 </span><span>返回</span>
@@ -7,7 +8,9 @@
 			<div id="chattitle">{{$route.query.chatidname}}</div>			
 			<div id="chatarea" v-if="dialogues[$route.query.chatid]">
 				<div v-for="dia in dialogues[$route.query.chatid].conversation" :class=dia.position class="chatbox">
+					<router-link :to="{path:'/details',query:{contactid:dia.num}}">
 					<div class="chatviewhead"><img :src="dia.speaker"></div>
+					</router-link>
 					<div class="chatviewbody">{{dia.content}}</div>
 				</div>
 			</div>
@@ -20,6 +23,7 @@
 				<span class="more iconfont icon-dialogue-jia"></span>
 			</div>
 	</div>
+	</transition>
 </template>
 <script type="text/javascript">
 	import axios from 'axios'
@@ -151,4 +155,11 @@
 	.right{
 		flex-direction: row-reverse
 	}
+	.fade-enter-active{
+ 		 transition: opacity .3s;
+	}
+	.fade-enter{
+ 		 opacity: 0;
+	}
+
 </style>

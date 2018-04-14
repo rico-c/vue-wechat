@@ -1,27 +1,25 @@
 <template>
 	<div id="details">
 			<div id="back" @click="back">
-				<!-- <router-link to="/vcontact"> -->
 				<span>〈 </span><span>返回</span>
-			<!-- 	</router-link> -->
 			</div>
 			<div class='detailcells'>
 			<div class='detailcell'>
-				<div class='detailheader'>
-		          	<img :src="userInfo.headerimg">
+				<div class='detailheader' v-if="contacts[usernum]">
+		          	<img :src="contacts[usernum].headerimg">
 		        </div>
-		        <div class="detailheadername" v-if="userInfo">
+		        <div class="detailheadername" v-if="contacts[usernum]">
 		          	<div id="contactname">
-		          		<span>{{userInfo.name}}</span>
-		          		<span class="gender" :class="[userInfo.sex==0?'gender-female':'gender-male']"></span>
+		          		<span>{{contacts[usernum].name}}</span>
+		          		<span class="gender" :class="[contacts[usernum].sex==0?'gender-female':'gender-male']"></span>
 		          	</div>
 		          	<div>
 		          		<span>微信号:</span>
-		          		<span>{{userInfo.id}}</span>
+		          		<span>{{contacts[usernum].id}}</span>
 		          	</div>
 		          	<div>
 		          		<span>昵称:</span>
-		          		<span>{{userInfo.name}}</span>
+		          		<span>{{contacts[usernum].name}}</span>
 		          	</div>
 		        </div>
 		    </div>
@@ -31,17 +29,17 @@
 		         	<div class="detailcellname">
 		           		<p>地区</p>
 		         	</div>
-		         	<div class="detailcontent" v-if="userInfo">
-		         		{{userInfo.region}}
+		         	<div class="detailcontent" v-if="contacts[usernum]">
+		         		{{contacts[usernum].region}}
 		         	</div>
 		        </div>
-		        <router-link :to="{path:'/albums',query:{contactid:userInfo}}">
+		        <router-link :to="{path:'/albums',query:{contactid:usernum}}">
 		        <div class='detailcell'>
 		         	<div class="detailcellname">
 		           		<p>个人相册</p>
 		         	</div>
-		         	<div class="detailcontent" v-if="userInfo">
-		         		<div class="albumshow" v-for="album in userInfo.momentsimg">
+		         	<div class="detailcontent" v-if="contacts[usernum]">
+		         		<div class="albumshow" v-for="album in contacts[usernum].momentsimg">
 		         			<img :src="album.imgs">
 		         		</div>
 		         	</div>
@@ -51,26 +49,28 @@
 		         	<div class="detailcellname">
 		           		<p>个性签名</p>
 		         	</div>
-		         	<div class="detailcontent" v-if="userInfo">
-		         		{{userInfo.note}}
+		         	<div class="detailcontent" v-if="contacts[usernum]">
+		         		{{contacts[usernum].note}}
 		         	</div>
 		        </div>
 			</div>
-			<router-link to="/chatview">
-			<div class="buttongreen"><p>发消息</p></div>
+			<router-link :to="{path:'/chatview',query:{chatid:contacts[usernum].chatnum,chatidname:contacts[usernum].name}}">
+				<div class="buttongreen"><p>发消息</p></div>
 			</router-link>
 			<div class="buttonwhite"><p>视频通话</p></div>
 	</div>
 </template>
 <script type="text/javascript">
+	import axios from 'axios'
 	export default{
 	data() {
        	return {
-          	contactinfo:{}
+          	contactinfo:{},
+         	contacts:[]
         }
     },
 	computed: {
-            userInfo() {
+            usernum() {
                 return this.$route.query.contactid;
             }
         },
@@ -78,7 +78,12 @@
 			back(){
 				this.$router.go(-1)
 			}
-		}
+		},
+	created() {
+    		axios.get('static/data.json').then(response => 
+     			(this.contacts=response.data.contacts)
+    		);
+  		}
     }
 </script>
 <style type="text/css">

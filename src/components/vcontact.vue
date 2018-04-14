@@ -36,7 +36,7 @@
 		</div>
 		<div class='contactcells' v-if="contacts">		
 			<div class='contactcell' v-for='contactinfo in contacts'>
-			<router-link :to="{path:'/details',query:{contactid:contactinfo}}">	
+			<router-link :to="{path:'/details',query:{contactid:contactinfo.num}}">	
 				<div id="contactunit">
 					<div class='contactcellimg'>
 			           	<img :src="contactinfo.headerimg">
