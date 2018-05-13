@@ -1,6 +1,7 @@
 # vue-wechat
 
-> 基于vue的SPA仿微信页面，使用router、axios实现了基本的微信界面，读取模拟数据中的朋友圈及对话等信息。
+* 基于vue的SPA仿微信页面，使用router、axios实现了基本的微信界面，读取模拟数据中的朋友圈及对话等信息。
+* 在线演示地址：ricofishing.com
 
 ## Build Setup
 
